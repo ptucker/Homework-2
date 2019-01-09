@@ -7,6 +7,7 @@
 public class CityHall extends Building {
 
     // Member variables
+    //PT -- ArrayList<Police> will work better. Can ordinary People come to City Hall?
     private Police [] currentOccupants;         // An array member variable holding the Police objects contained within CityHall
     String name;                                // Name of the City Hall
 
@@ -29,6 +30,7 @@ public class CityHall extends Building {
      * Create a way for adding an officer to City Hall
      * @param occupant is the Police object to be added to the officer array
      */
+    //PT -- And ArrayList<Police> takes care of all of this for you.
     public void addOccupants(Police occupant) {             // It takes the new officer object as a parameter
         int currentSize = currentOccupants.length;          // Creates an int variable to hold the current length of the array of police officers
         int newSize = currentSize + 1;                      // Also creates an int variable 1 bigger than the current size to account for the addition
@@ -39,6 +41,8 @@ public class CityHall extends Building {
         newOccupantArray[newSize- 1] = occupant;            // Give this new array the officer we are adding to City Hall at the last index location
         currentOccupants = newOccupantArray;                // Reassign this updated array to our currentOccupants member variable
     }
+    
+    //PT -- remove occupant? -1
 
     // Getter
 

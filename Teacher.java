@@ -16,7 +16,7 @@ public class Teacher extends Person implements Employee {
 
     // Constructors
 
-    Teacher() {}
+    Teacher() {} //PT -- default grade level? -1
     /**
      * Initialize a new teacher based off of his/her current grade level and certification
      * @param grade_level specifies what grade this Teacher object is currently teaching
@@ -33,7 +33,7 @@ public class Teacher extends Person implements Employee {
      * Allow teachers who advance in their education to update their certification
      * @param upgrade specifies the upgraded certification
      */
-    public void setCert(String upgrade) { certification = upgrade; }
+    public void setCert(String upgrade) { certification = upgrade; } //PT -- again, validate the input. -2
 
     // Getters
 
@@ -69,6 +69,7 @@ public class Teacher extends Person implements Employee {
         or just a general Bachelor's degree and sends a message regarding their paycheck based off 
         of that information.
         */
+     //PT -- generally don't System.out here. Leave that to your UI code
         if (this.certification == "PhD"){
             System.out.println("Your paycheck is $7,000.  Thank you for all that you do!");
         }

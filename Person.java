@@ -36,7 +36,7 @@ public void setName(String Name) { name = Name; }
  * This person had a birthday and we need to update his/her age
  * @param Age specifies his/her new age
  */                         
-public void setAge(int Age) { age = Age; }
+public void setAge(int Age) { age = Age; } //PT -- make sure you're getting a valid age (and phone_number). -2
 /**
  * This person changed their phone number and we need to update it
  * @param phone_number specifies the new number 
